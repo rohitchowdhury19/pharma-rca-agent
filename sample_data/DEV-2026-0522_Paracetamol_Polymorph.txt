@@ -1,0 +1,24 @@
+INCIDENT MEMORANDUM - CRITICAL QUALITY DEVIATION
+DEV-ID: DEV-2026-0522
+To: Quality Assurance Review Board
+From: Mark Vance (Senior Process Chemist, Synthetic APIs)
+Date: November 21, 2026
+Subject: Metastable Form-II Polymorph Failure in Paracetamol API Fine Grade (Batch PCM-2611-04)
+
+1. Executive Summary
+During routine batch release characterization of Paracetamol Fine Grade API (Batch PCM-2611-04, 1500 kg batch size, crystallizer CR-201), Powder X-Ray Diffraction (PXRD) screening detected an anomalous diffraction peak at 2θ = 12.1° with 12% relative intensity, indicating the presence of metastable Form-II crystal polymorph. The validated registered drug master file (DMF) mandates 100% monoclinic Form-I with zero detectable Form-II polymorph.
+
+2. Process Narrative & Excursion Details
+Under SOP-PCM-CRY-01, the crystallization recipe charges pure ethanol, dissolves paracetamol crude at 65°C, cools the liquor to 38°C, and seeds with 1.5 kg of micronized Form-I seed crystals. Immediately following seeding, chilled purified water (anti-solvent) is dosed at a strictly controlled rate of 20 L/min over a period of 50 minutes.
+
+During Batch PCM-2611-04, mass flow controller MFC-201 indicated a constant feed rate of 20 L/min on the operator DCS human-machine interface. However, post-incident forensic analysis of load cell loss-in-weight data from the purified water holding vessel demonstrated that 500 kg of water was transferred in only 22 minutes (actual flow rate ~45 L/min).
+
+3. Root Cause Analysis Findings
+- Post-batch calibration bench verification of Coriolis flow meter MFC-201 revealed an electronic zero-point shift and circuit amplifier gain error of +18% following an unlogged hot Clean-In-Place (CIP) cycle 3 weeks ago.
+- The sudden rapid dosing created localized high supersaturation (supersaturation ratio S > 4.5) adjacent to the liquid feed dip tube.
+- Because the solution supersaturation exceeded the metastable zone width, secondary heterogeneous nucleation favored the kinetically fast but thermodynamically unstable Form-II crystal polymorph.
+
+4. Immediate Containment
+- Batch PCM-2611-04 was placed into QA Quarantine.
+- Crystallizer CR-201 was locked out.
+- Downstream rotary drying was aborted.

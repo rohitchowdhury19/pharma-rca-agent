@@ -1,0 +1,34 @@
+From: alerts-qa@pharmasynth-apis.com
+To: qa-investigations@pharmasynth-apis.com, apidirector@pharmasynth-apis.com
+Subject: [URGENT QUALITY ALERT] OOS Residual Solvent & Yield Deficit - Azithromycin Dihydrate (Batch AZM-2603-09)
+Date: Sun, 22 Nov 2026 08:15:30 +0000
+
+QUALITY INCIDENT ALERT: DEV-2026-0610
+
+Attention QA Investigation Team,
+
+Batch AZM-2603-09 of Azithromycin Dihydrate API (Batch size: 200 kg nominal, RCVD-102 Vacuum Cone Dryer) has generated an Out-of-Specification (OOS) analytical result upon completion of the 24-hour drying cycle:
+
+1. Out-of-Specification Result:
+   - Residual Solvent (Acetone by GC Headspace): 7,200 ppm (ICH Q3C Limit: Not More Than 5,000 ppm)
+   - Actual isolated yield: 142.3 kg (Historical average: 174.0 kg, -18.2% yield loss)
+   - Water Content (KF): 4.8% (Conforming to dihydrate stoichiometry)
+
+2. Critical Process Parameter Deviation:
+   - Vacuum trend logs from VCD-102 indicate chamber pressure degraded from 15 mbar to 280 mbar between hour 6 and hour 14 of the drying cycle.
+   - Liquid nitrogen cold trap condenser temperature rose to +8°C due to an intermittent cryogenic solenoid valve blockage.
+
+3. Engineering Preliminary Teardown:
+   - Maintenance inspected dry vacuum pump VP-102 and found a fractured graphite mechanical shaft seal ring, permitting atmospheric nitrogen and air ingress into the vacuum manifold.
+   - The reduced vacuum impaired acetone sublimation kinetics, preventing desorption from the dihydrate crystal interstices.
+
+Immediate Actions Taken:
+- Batch AZM-2603-09 tagged with QA Red Hold Tag #HLD-9982.
+- RCVD-102 placed out of service.
+- Work order WO-ENG-2026-7788 issued for vacuum pump replacement.
+
+Please initiate full Root Cause Analysis (Fishbone, 5 Whys, CAPA).
+
+Dr. Elena Rostova
+QA Operations Supervisor
+PharmaSynth API Technologies
